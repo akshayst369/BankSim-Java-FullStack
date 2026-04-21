@@ -51,5 +51,70 @@ https://www.linkedin.com/posts/akshay-r369_java-jsp-servlet-activity-73513103204
 ---
 
 ## 📂 Project Structure
+BankSim/
+│
+├── src/main/java/com/bank/
+│ ├── LoginServlet.java
+│ └── LogoutServlet.java
+│
+├── src/main/webapp/
+│ ├── login.jsp
+│ ├── style.css
+│ └── WEB-INF/web.xml
 
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/BankSim.git
+
+2. Configure Database
+
+Create database in MySQL:
+CREATE DATABASE BankSim;
+
+USE BankSim;
+
+CREATE TABLE accounts (
+    acc_number VARCHAR(30) PRIMARY KEY AUTO_INCREMENT,
+    pin VARCHAR(10),
+    balance DOUBLE
+);
+
+3. Update DB Credentials
+
+Modify in LoginServlet.java:
+jdbc:mysql://localhost:3306/BankSim
+username: root
+password: your_password
+
+4. Deploy on Tomcat
+Import project into Eclipse
+Configure Apache Tomcat
+Run the server
+Open:
+http://localhost:8080/BankSim
+
+🧪 Key Learnings
+Backend-centric full stack development
+Servlet lifecycle and request handling
+Session management and authentication
+JDBC integration with MySQL
+Debugging Tomcat deployment issues
+Building dynamic UI with JSP and JavaScript
+
+📈 Future Improvements
+Add transaction history
+Implement password hashing
+Use MVC framework (Spring Boot)
+Improve UI/UX with modern frontend frameworks
+
+👨‍💻 Author
+Akshay
+
+⭐ If you like this project, consider giving it a star!
+
+---
 
