@@ -14,7 +14,7 @@ public class LoginServlet extends HttpServlet {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection conn = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/BankSim", "root", "rootakshay");
+                "jdbc:mysql://localhost:3306/BankSim", "", "");
 
             String sql = "SELECT * FROM accounts WHERE acc_number = ? AND pin = ?";
             PreparedStatement ps = conn.prepareStatement(sql);
