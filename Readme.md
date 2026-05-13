@@ -1,56 +1,88 @@
 # 🏦 BankSim - Full Stack Java Web Application
 
-## 📌 Overview
-BankSim is a full-stack web application that simulates core banking operations such as account creation, login, deposit, withdrawal, and account deletion.  
-The project emphasizes **backend-centric development using Java Servlets, JDBC, and MySQL**, with a functional frontend interface.
-
-🔗 LinkedIn Project Showcase:  
-https://www.linkedin.com/posts/akshay-r369_javadevelopment-springframework-springboot-activity-7361089800747012098-F5B-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFaT1pIBI6IDPbdc9C-wnGtvEpYmXGaio_s
+> A comprehensive banking simulation system built with Java, demonstrating core banking operations and secure authentication.
 
 ---
 
-## 🚀 Features
-- Create a new bank account (auto-generated account number)  
-- Secure login with PIN authentication  
-- Deposit money  
-- Withdraw money with balance validation  
-- Delete account functionality  
-- Session-based authentication  
-- Dynamic dashboard after login  
+## 📋 Table of Contents
+- [Overview](#overview)
+- [Key Features](#-key-features)
+- [Tech Stack](#-tech-stack)
+- [Architecture](#-architecture)
+- [Project Structure](#-project-structure)
+- [Installation & Setup](#-installation--setup)
+- [Usage Guide](#-usage-guide)
+- [Security Features](#-security-features)
+- [API Endpoints](#-api-endpoints)
+- [Database Schema](#-database-schema)
+- [Future Enhancements](#-future-enhancements)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+---
+
+## 📌 Overview
+
+BankSim is a full-stack web application that simulates essential banking operations with a focus on **backend-centric development using Java Servlets, JDBC, and MySQL**. The application provides a secure, session-based authentication system with a responsive frontend interface.
+
+**LinkedIn Project Showcase:**  
+https://www.linkedin.com/posts/akshay-r369_javadevelopment-springframework-springboot-activity-7361089800747012098-F5B-?utm_source=share&utm_medium=member_desktop
+
+---
+
+## 🎯 Key Features
+
+- ✅ **Account Management**
+  - Create new bank accounts with auto-generated account numbers
+  - Delete account with proper validation
+  
+- 🔐 **Authentication & Security**
+  - Secure login with PIN authentication
+  - Session-based user state management
+  - SQL injection prevention using PreparedStatements
+  
+- 💳 **Banking Operations**
+  - Deposit money to accounts
+  - Withdraw money with balance validation
+  - Real-time account balance updates
+  
+- 📊 **User Interface**
+  - Dynamic dashboard after login
+  - Responsive design for better UX
+  - Intuitive navigation
 
 ---
 
 ## 🛠 Tech Stack
 
 ### Backend
-- Java (Servlets, JSP)  
-- JDBC  
-- Apache Tomcat  
+| Component | Technology |
+|-----------|-----------|
+| **Language** | Java |
+| **Framework** | Servlets, JSP |
+| **Database Access** | JDBC |
+| **Server** | Apache Tomcat |
+| **Build Tool** | Maven/Gradle (if applicable) |
 
-🔗 Initial Backend Setup:  
+**Backend Setup Reference:**  
 https://www.linkedin.com/feed/update/urn:li:activity:7351310320432287747/
 
 ### Frontend
-- HTML5  
-- CSS3  
-- JavaScript  
+| Component | Technology |
+|-----------|-----------|
+| **Markup** | HTML5 |
+| **Styling** | CSS3 |
+| **Interactivity** | JavaScript |
 
 ### Database
-- MySQL  
+| Component | Technology |
+|-----------|-----------|
+| **DBMS** | MySQL |
+| **Version** | 5.7+ recommended |
 
 ---
 
-## 🧠 Architecture
-- Uses a **single controller servlet (LoginServlet)** to handle:
-  - Login  
-  - Account creation  
-  - Deposit  
-  - Withdraw  
-  - Delete account  
-- Follows a simplified **MVC pattern**  
-- Uses **HTTP sessions** for user state management  
-- Uses **PreparedStatement** to prevent SQL injection  
+## 🏗 Architecture
 
----
-
-
+### Design Pattern
+The application follows a simplified **MVC (Model-View-Controller)** pattern with:
