@@ -3,6 +3,12 @@
 ## 📌 Overview
 BankSim is a full-stack web application that simulates core banking operations. Built with Java Servlets and MySQL, it provides a secure and functional banking experience with real-world features like session management and SQL injection prevention.
 
+🔗 **LinkedIn Project Showcase:**  
+https://www.linkedin.com/posts/akshay-r369_javadevelopment-springframework-springboot-activity-7361089800747012098-F5B-?utm_source=share&utm_medium=member_desktop
+
+🔗 **Initial Backend Setup Guide:**  
+https://www.linkedin.com/feed/update/urn:li:activity:7351310320432287747/
+
 ---
 
 ## 🚀 Features
@@ -118,8 +124,8 @@ START
 
 ```
 ┌─────────────┐         ┌──────────────┐
-│    USERS    │ 1────∞ │ TRANSACTIONS │
-├────────────���┤         ├──────────────┤
+│    USERS    │ 1----∞ │ TRANSACTIONS │
+├─────────────┤         ├──────────────┤
 │ account_id  │◄────────┤ account_id   │
 │ name        │         │ trans_date   │
 │ pin         │         │ amount       │
@@ -202,4 +208,3 @@ Open source - Feel free to use and modify
 
 ## 👤 Author
 **Akshay R** - Java Full Stack Developer
-
